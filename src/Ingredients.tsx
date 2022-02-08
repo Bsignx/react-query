@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useQueryClient } from "react-query";
 
 import { useCreateIngredients } from "./hooks/useCreateIngredients";
-import { IngredientsList } from "./IngredinetsList";
+import { IngredientsList } from "./IngredientsList";
 
 export const Ingredients = () => {
   const { mutateAsync, isLoading, isError, isSuccess } = useCreateIngredients();

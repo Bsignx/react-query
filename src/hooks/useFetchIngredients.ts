@@ -10,4 +10,6 @@ async function fetchIngredients(): Promise<Ingredient[]> {
 }
 
 export const useFetchIngredients = () =>
-  useQuery<Ingredient[]>("ingredients", fetchIngredients);
+  useQuery<Ingredient[]>("ingredients", fetchIngredients, {
+    refetchOnWindowFocus: false,
+  });
